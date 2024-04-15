@@ -102,7 +102,7 @@ input {
 /* Hero Section */
 
 .phone-image {
-  background-image: url(/images/phone-images/desk-phone1.png);
+  background-image: url(/images/desk-phone1.png);
   background-repeat: no-repeat;
   background-position: center 85%;
 }
@@ -201,7 +201,7 @@ input {
 
 .service-section {
   padding: 113px 0 124px 0;
-  background-image: url(/images/phone-images/desk-phone1.png);
+  background-image: url(/images/desk-phone1.png);
   background-repeat: no-repeat;
   background-position: center 100%;
 }
@@ -352,13 +352,13 @@ input {
 /* Menu section */
 .contact-section {
   padding: 140px 0;
-  background-image: url(/images/phone-images/desk-phone2.png);
+  background-image: url(/images/desk-phone2.png);
   background-repeat: no-repeat;
   background-position: center 0%;
 }
 
 .phone-image2 {
-  background-image: url(/images/phone-images/desk-phone2.png);
+  background-image: url(/images/desk-phone2.png);
   background-repeat: no-repeat;
   background-position: center 37%;
 }

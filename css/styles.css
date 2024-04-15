@@ -149,8 +149,8 @@ input {
 .slider {
   width: 580px;
   height: 580px;
-  overflow: hidden;
   border: 20px solid #ffe550;
+  overflow: hidden;
   border-radius: 50%;
   transition: 700ms;
 }
@@ -174,7 +174,11 @@ input {
   border: none;
   margin: -30px;
   z-index: 99;
-  transition: 500ms;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
 }
 
 .slider-next {
@@ -184,12 +188,25 @@ input {
   border: none;
   margin: -30px;
   z-index: 99;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 200ms;
+}
+
+.slider-rows {
   transition: 500ms;
 }
 
-.slider-prev:hover,
-.slider-next:hover {
-  background-color: #bbf330;
+.slider-prev:hover > .slider-rows,
+.slider-next:hover > .slider-rows {
+  fill: #7eb101;
+}
+
+.slider-prev:active,
+.slider-next:active {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.16);
 }
 
 .hero-image:hover,
@@ -210,7 +227,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 160px;
+  gap: 90px;
 }
 
 .service-block {
@@ -219,6 +236,13 @@ input {
 
 .apple-border {
   width: 550px;
+  padding: 24px;
+  background-color: #ffe450;
+  border: rgba(255, 255, 255, 0.5) 5px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-title {
@@ -274,17 +298,8 @@ input {
 
 .service-btn:hover,
 .service-btn:focus {
-  border-radius: 30px;
-  padding: 10px 20px;
-  width: 106px;
-  height: 40px;
   border: none;
-
   background: #bbf330;
-}
-
-.service-image {
-  margin-bottom: 160px;
 }
 
 .service-apple-container {

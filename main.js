@@ -17,21 +17,23 @@ for (button of closeBtn) {
 
 // slider
 
-let offset = 0;
 const sliderLine = document.querySelector(".slider-line");
+const sliderPrev = document.querySelector(".slider-prev");
+const sliderNext = document.querySelector(".slider-next");
+let offset = 0;
 
-document.querySelector(".slider-prev").addEventListener("click", () => {
+sliderPrev.addEventListener("click", () => {
   offset -= 528;
   if (offset < 0) {
     offset = 528 * 2;
   }
-  sliderLine.style.left = -offset + "px";
+  return (sliderLine.style.left = -offset + "px");
 });
 
-document.querySelector(".slider-next").addEventListener("click", () => {
+sliderNext.addEventListener("click", () => {
   offset += 528;
   if (offset > 528 * 2) {
     offset = 0;
   }
-  sliderLine.style.left = -offset + "px";
+  return (sliderLine.style.left = -offset + "px");
 });

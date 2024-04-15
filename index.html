@@ -58,7 +58,11 @@
               <button class="header-btn" type="button">Order Now</button>
             </div>
             <div class="slider-container">
-              <button class="slider-prev"><--</button>
+              <button class="slider-prev">
+                <svg class="slider-rows" width="29" height="16">
+                  <use href="./images/icons.svg#icon-right"></use>
+                </svg>
+              </button>
               <div class="slider">
                 <div class="slider-line">
                   <img
@@ -83,23 +87,25 @@
                   />
                 </div>
               </div>
-              <button class="slider-next">--></button>
+              <button class="slider-next">
+                <svg class="slider-rows" width="29" height="16">
+                  <use href="./images/icons.svg#icon-left"></use>
+                </svg>
+              </button>
             </div>
           </div>
         </section>
 
         <section id="service" class="service-section">
           <div class="container service-container">
-            <div class="apple-border">
-              <div class="service-apple-container">
-                <img
-                  class="service-image"
-                  src="./images/aple-min.png"
-                  alt="apple"
-                  width="396"
-                />
-              </div>
-            </div>
+            <img
+              class="service-image"
+              src="./images/apple.png"
+              alt="apple"
+              width="550"
+              height="604"
+            />
+
             <div class="service-block">
               <h2 class="service-title">What’s Special About Our Offerings</h2>
               <p class="service-text">
@@ -112,9 +118,7 @@
                 <li class="service-list-item">
                   <div class="service-icon-block">
                     <svg width="32" height="32">
-                      <use
-                        href="./images/icons.svg#icon-rocket_launch_FILL0_wght400_GRAD0_opsz48"
-                      ></use>
+                      <use href="./images/icons.svg#icon-rocket"></use>
                     </svg>
                   </div>
                   <h3 class="service-item-title">Fasest Delivery</h3>
@@ -128,9 +132,7 @@
                 <li class="service-list-item">
                   <div class="service-icon-block">
                     <svg width="32">
-                      <use
-                        href="./images/icons.svg#icon-touch_app_FILL0_wght400_GRAD0_opsz48"
-                      ></use>
+                      <use href="./images/icons.svg#icon-touch"></use>
                     </svg>
                   </div>
                   <h3 class="service-item-title">Easy To Order</h3>
@@ -282,7 +284,7 @@
         <div class="modal">
           <button class="close-btn">
             <svg width="10" height="10">
-              <use href="./images/icons.svg#icon-Vector1"></use>
+              <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
           <h2 class="form-title">Order form</h2>

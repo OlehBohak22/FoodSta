@@ -3,11 +3,17 @@ const btnOfModal = document.querySelectorAll(".header-btn");
 const modal = document.querySelector(".modal-overlay");
 const closeBtn = document.querySelectorAll(".close-btn");
 
-for (button of btnOfModal) {
+// for (button of btnOfModal) {
+//   button.addEventListener("click", () => {
+//     modal.classList.toggle("is-open");
+//   });
+// }
+
+btnOfModal.forEach((button) => {
   button.addEventListener("click", () => {
     modal.classList.toggle("is-open");
   });
-}
+});
 
 for (button of closeBtn) {
   button.addEventListener("click", () => {
@@ -15,8 +21,7 @@ for (button of closeBtn) {
   });
 }
 
-// slider
-
+// Slider
 const sliderLine = document.querySelector(".slider-line");
 const sliderPrev = document.querySelector(".slider-prev");
 const sliderNext = document.querySelector(".slider-next");

@@ -40,6 +40,27 @@ input {
   padding: 0 16px;
   margin: 0 auto;
 }
+@media (min-width: 769px) {
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 32px;
+  }
+}
 
 /* Header */
 .header {
@@ -107,6 +128,14 @@ input {
   background-position: center 85%;
 }
 
+@media (max-width: 768px) {
+  .phone-image {
+    background-image: url(../images/tablet-phone1.png);
+    background-repeat: no-repeat;
+    background-position: center 85%;
+  }
+}
+
 .hero-container {
   display: flex;
   align-items: center;
@@ -149,14 +178,14 @@ input {
 .slider {
   width: 580px;
   height: 580px;
-  border: 20px solid #ffe550;
+  border: 26px solid #ffe550;
   overflow: hidden;
   border-radius: 50%;
   transition: 700ms;
 }
 
 .slider:hover {
-  border: 20px solid #bbf330;
+  border: 26px solid #bbf330;
 }
 
 .slider-line {
@@ -214,10 +243,41 @@ input {
   border: 20px solid #bbf330;
 }
 
+@media (max-width: 768px) {
+  .hero {
+    padding: 60px 0 25px 0;
+  }
+
+  .hero-title {
+    max-width: 537px;
+  }
+
+  .hero-text {
+    max-width: 336px;
+  }
+
+  .slider {
+    max-width: 336px;
+    max-height: 320px;
+    border: 14px solid #ffe550;
+  }
+
+  .slider:hover {
+    border: 14px solid #bbf330;
+  }
+
+  .slider-container {
+    margin-top: auto;
+    position: absolute;
+    left: 400px;
+    top: 230px;
+  }
+}
+
 /* Second section */
 
 .service-section {
-  padding: 113px 0 124px 0;
+  padding: 60px 0 40px 0;
   background-image: url(../images/desk-phone1.png);
   background-repeat: no-repeat;
   background-position: center 100%;
@@ -232,17 +292,6 @@ input {
 
 .service-block {
   max-width: 573px;
-}
-
-.apple-border {
-  width: 550px;
-  padding: 24px;
-  background-color: #ffe450;
-  border: rgba(255, 255, 255, 0.5) 5px solid;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .service-title {
@@ -323,6 +372,45 @@ input {
   margin-bottom: 8px;
 }
 
+@media (max-width: 768px) {
+  .service-section {
+    padding: 113px 0 100px 0;
+    background-image: url(../images/tablet-phone1.png);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+  }
+
+  .service-container {
+    flex-direction: column;
+    align-items: start;
+    gap: 60px;
+  }
+
+  .service-image {
+    max-width: 357px;
+    max-height: 394px;
+    margin-right: 29px;
+  }
+
+  .service-item-text {
+    width: 288px;
+  }
+
+  .tablet-service-apples {
+    display: flex;
+    align-items: center;
+  }
+
+  .transparent-apples {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .service-tab-transparent-apple {
+    margin-right: 44px;
+  }
+}
+
 /*  Menu section*/
 
 .section-menu {
@@ -333,7 +421,15 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 100px;
+  gap: 32px;
+}
+
+.menu-item {
+  border-radius: 50%;
+  border: 11px solid #ffe550;
+  padding: 19px;
+  transition: 700ms;
+  flex-basis: calc((100% - 4 * 32px) / 3);
 }
 
 .menu-title {
@@ -352,30 +448,31 @@ input {
   margin-bottom: 40px;
 }
 
-.menu-image {
-  border-radius: 50%;
-  border: 11px solid #ffe550;
-  padding: 19px;
-  transition: 700ms;
+.menu-item:hover,
+.menu-item:focus {
+  border: 11px solid #bbf330;
 }
 
-.menu-image:hover,
-.menu-image:focus {
-  border: 16px solid #bbf330;
+@media (max-width: 768px) {
+  .section-menu {
+    padding: 100px 0;
+  }
+
+  .menu-item {
+    flex-basis: calc((100% - 4 * 32px) / 2);
+  }
+
+  .menu-image {
+    width: 267px;
+  }
 }
 
-/* Menu section */
+/* Contact section */
 .contact-section {
-  padding: 140px 0;
+  padding: 100px 0 200px 0;
   background-image: url(../images/desk-phone2.png);
   background-repeat: no-repeat;
   background-position: center 0%;
-}
-
-.phone-image2 {
-  background-image: url(../images/desk-phone2.png);
-  background-repeat: no-repeat;
-  background-position: center 37%;
 }
 
 .contact-title {
@@ -435,15 +532,54 @@ input {
   gap: 16px;
 }
 
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 58px 0 127px 0;
+    background-image: url(../images/tablet-phone2.png);
+    background-repeat: no-repeat;
+    background-position: center 100%;
+  }
+
+  .phone-image2 {
+    background-image: url(../images/tablet-phone2.png);
+    background-repeat: no-repeat;
+    background-position: center 0%;
+  }
+
+  .contact-list {
+    gap: 32px;
+  }
+
+  .contact-list-item {
+    max-width: 336px;
+  }
+
+  .item-text {
+    max-width: 312px;
+  }
+
+  .bottom-section {
+    position: relative;
+  }
+
+  .banan {
+    max-width: 281px;
+    position: absolute;
+    left: 450px;
+    top: -70px;
+  }
+}
+
 /* Bottom section */
 
 .bottom-container {
   display: flex;
   align-items: center;
+  margin-top: -70px;
 }
 
 .bottom-section {
-  padding: 176px 0 201px 0;
+  padding: 0 0 64px 0;
 }
 
 .bottom-title {
@@ -504,6 +640,17 @@ input {
 .bottom-btn:hover,
 .bottom-btn:focus {
   background: #ffe450;
+}
+
+@media (max-width: 768px) {
+  .bottom-section {
+    padding-top: 70px;
+    padding-bottom: 100px;
+  }
+
+  .bottom-container {
+    margin-top: 0;
+  }
 }
 
 /* Footer section */
@@ -625,6 +772,22 @@ input {
   color: #7eb101;
 }
 
+@media (max-width: 768px) {
+  .footer-upper-row {
+    flex-wrap: wrap;
+    margin-bottom: 100px;
+  }
+
+  .footer-logo {
+    margin-right: 114px;
+    margin-bottom: 40px;
+  }
+
+  .footer-form-container {
+    display: block;
+  }
+}
+
 /* Modal */
 
 .modal-overlay {
@@ -674,6 +837,7 @@ input {
   justify-content: center;
   align-items: center;
   transition: 150ms;
+  cursor: pointer;
 }
 
 .close-btn:hover,
@@ -725,6 +889,7 @@ input {
   line-height: 1.5;
   color: #2c2c2c;
   transition: 150ms;
+  cursor: pointer;
 }
 
 .form-button:active {
@@ -734,6 +899,10 @@ input {
   width: 106px;
   height: 40px;
   background: #bbf330;
+}
+
+.form-button:hover {
+  box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
 ::placeholder {

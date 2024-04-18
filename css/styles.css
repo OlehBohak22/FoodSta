@@ -1107,6 +1107,10 @@ input {
   cursor: pointer;
 }
 
+.close-icon {
+  fill: rgb(0, 0, 0);
+}
+
 .close-btn:hover,
 .close-btn:focus {
   background-color: #7eb101;
@@ -1250,7 +1254,6 @@ input {
 
 .menu-nav-item {
   padding: 17px 0;
-  transition-duration: 150ms;
 }
 
 .menu-nav-item:active {

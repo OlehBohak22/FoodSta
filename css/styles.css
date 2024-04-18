@@ -1100,9 +1100,6 @@ input {
   position: absolute;
   top: 12px;
   right: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   transition: 150ms;
   cursor: pointer;
 }

@@ -2,6 +2,9 @@
 const btnOfModal = document.querySelectorAll(".header-btn");
 const modal = document.querySelector(".modal-overlay");
 const closeBtn = document.querySelectorAll(".close-btn");
+const menuBtn = document.querySelector(".mob-burger-btn");
+const menu = document.querySelector(".menu");
+const menuBtnClose = document.querySelector(".menu-close-btn");
 
 // for (button of btnOfModal) {
 //   button.addEventListener("click", () => {
@@ -20,6 +23,14 @@ for (button of closeBtn) {
     modal.classList.toggle("is-open");
   });
 }
+
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("is-open");
+});
+
+menuBtnClose.addEventListener("click", () => {
+  menu.classList.toggle("is-open");
+});
 
 // Slider
 const sliderLine = document.querySelector(".slider-line");

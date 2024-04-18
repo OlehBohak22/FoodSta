@@ -28,8 +28,39 @@
           ><svg width="66" height="52">
             <use href="./images/icons.svg#icon-logo"></use></svg
         ></a>
+        <div class="menu-container">
+          <button class="mob-burger-btn visually-hidden-burger">
+            <svg width="23" height="16">
+              <use href="./images/icons.svg#icon-burger"></use>
+            </svg>
+          </button>
 
-        <nav class="nav">
+          <div class="menu">
+            <svg class="menu-close-btn" width="10" height="10">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+
+            <ul class="menu-nav-list">
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="./index.html">Home</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#about">About</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#service">Service</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="menu-nav-item">
+                <a class="menu-nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="nav visually-hidden-mobile">
           <ul class="nav-list">
             <li><a class="nav-link" href="./index.html">Home</a></li>
             <li><a class="nav-link" href="#about">About</a></li>
@@ -38,7 +69,9 @@
             <li><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <button class="header-btn" type="button">Order Now</button>
+        <button class="header-btn visually-hidden-mobile" type="button">
+          Order Now
+        </button>
       </div>
     </header>
 
@@ -58,7 +91,7 @@
 
               <button class="header-btn" type="button">Order Now</button>
             </div>
-            <div class="slider-container">
+            <div class="slider-container visually-hidden-mobile">
               <button class="slider-prev">
                 <svg class="slider-rows" width="29" height="16">
                   <use href="./images/icons.svg#icon-right"></use>
@@ -67,6 +100,7 @@
               <div class="slider">
                 <div class="slider-line">
                   <img
+                    class="slider-image"
                     src="./images/hero-salad.png"
                     alt="Hero salad"
                     width="528"
@@ -74,6 +108,7 @@
                   />
 
                   <img
+                    class="slider-image"
                     src="./images/hero-pashot.png"
                     alt="Hero pashot"
                     width="528"
@@ -81,6 +116,7 @@
                   />
 
                   <img
+                    class="slider-image"
                     src="./images/hero-cream.png"
                     alt="Hero cream"
                     width="528"
@@ -109,6 +145,7 @@
               />
               <div class="transparent-apples visually-hidden">
                 <img
+                  class="visually-hidden-mobile"
                   src="./images/transparrent-apple.png"
                   alt="apple"
                   width="166"
@@ -116,6 +153,7 @@
                   class="service-tab-transparent-apple"
                 />
                 <img
+                  class="visually-hidden-mobile"
                   src="./images/transparrent-apple.png"
                   alt="apple"
                   width="108"
@@ -161,7 +199,15 @@
                   </p>
                 </li>
               </ul>
-              <button class="service-btn" type="button">Order Now</button>
+              <div class="service-btn-block">
+                <button class="service-btn" type="button">Order Now</button>
+                <a class="visually-hidden" href="./index.html"
+                  >Read More
+                  <svg width="13" height="10">
+                    <use href="./images/icons.svg#icon-left"></use>
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </section>
@@ -199,7 +245,7 @@
               />
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item visually-hidden-mobile">
               <img
                 class="menu-image"
                 src="./images/chicken-min.png"
@@ -208,7 +254,7 @@
               />
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item visually-hidden-mobile">
               <img
                 class="menu-image"
                 src="./images/salat-min.png"
@@ -217,7 +263,7 @@
               />
             </li>
 
-            <li class="menu-item">
+            <li class="menu-item visually-hidden-mobile">
               <img
                 class="menu-image"
                 src="./images/borshch-min.png"

@@ -107,6 +107,7 @@ input {
   border: none;
   cursor: pointer;
   transition: 250ms;
+  color: #2c2c2c;
 }
 
 .header-btn:hover,
@@ -845,9 +846,6 @@ input {
 }
 
 @media (max-width: 768px) {
-  .bottom-container {
-  }
-
   .bottom-section {
     padding-bottom: 60px;
   }
@@ -977,6 +975,7 @@ input {
   display: inline-flex;
   justify-content: center;
   transition: 250ms;
+  color: #2c2c2c;
 }
 
 .form-btn:hover,

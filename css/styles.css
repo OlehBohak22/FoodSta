@@ -495,7 +495,8 @@ input {
 }
 @media (max-width: 768px) {
   .service-section {
-    padding-bottom: 80px;
+    padding-bottom: 120px;
+    padding-top: 0;
   }
 
   .service-block {
@@ -507,7 +508,7 @@ input {
 
   .service-image {
     width: 280px;
-    height: 280px;
+    height: 309px;
   }
 
   .service-title {

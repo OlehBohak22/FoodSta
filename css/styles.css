@@ -486,6 +486,7 @@ input {
   .transparent-apples {
     display: flex;
     align-items: flex-end;
+    gap: 44px;
   }
 
   .service-tab-transparent-apple {

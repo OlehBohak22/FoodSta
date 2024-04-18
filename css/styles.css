@@ -1102,6 +1102,7 @@ input {
   right: 12px;
   transition: 150ms;
   cursor: pointer;
+  padding: 7px;
 }
 
 .close-icon {

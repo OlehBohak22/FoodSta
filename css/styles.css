@@ -1247,9 +1247,11 @@ input {
 }
 
 .menu-nav-link {
-  margin-left: 16px;
-  padding: 17px 0px;
-  padding-right: 100px;
+  padding: 17px 74px 17px 16px;
+}
+
+.menu-nav-link:active {
+  background: #bbf330;
 }
 
 .menu-nav-item {

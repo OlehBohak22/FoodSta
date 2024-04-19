@@ -36,8 +36,8 @@ menuBtnClose.addEventListener("click", () => {
 const sliderLine = document.querySelector(".slider-line");
 const sliderPrev = document.querySelector(".slider-prev");
 const sliderNext = document.querySelector(".slider-next");
-let offset = 0;
 
+let offset = 0;
 sliderPrev.addEventListener("click", () => {
   offset -= 528;
   if (offset < 0) {
